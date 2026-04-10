@@ -424,7 +424,7 @@ main { padding: 32px 80px 64px; }
         <div class="founder-avatar" style="background:var(--green-bg);color:var(--green-dark)">t</div>
         <div><div class="founder-name">tapi</div><div class="founder-role">Empresa</div></div>
       </div>
-      <div class="metric-row"><span class="metric-label">Followers</span><span class="metric-val">15.0k</span></div>
+      <div class="metric-row"><span class="metric-label">Followers</span><span class="metric-val">15.4k</span></div>
       <div class="metric-row"><span class="metric-label">ER</span><span class="metric-val warn">0.11%</span></div>
       <div class="founder-footer"><span class="badge badge-warn">⚠️ Bajo</span><span class="badge badge-error">1 post W15</span></div>
     </div>
@@ -501,7 +501,7 @@ main { padding: 32px 80px 64px; }
           <tr><td>W12 · 18–22 Mar</td><td class="center er-warn">0.63%</td><td class="center er-none">—</td><td class="center er-warn">0.68%</td><td class="center er-none">—</td><td class="center">3</td><td class="center">231</td></tr>
           <tr><td>W13 · 23–29 Mar</td><td class="center er-warn">0.15%</td><td class="center er-good">2.60% 🔥</td><td class="center er-none">—</td><td class="center er-good">1.85%</td><td class="center">4</td><td class="center">765</td></tr>
           <tr><td>W14 · 30 Mar–5 Abr</td><td class="center er-warn">0.29%</td><td class="center er-none">—</td><td class="center er-warn">1.09%</td><td class="center er-warn">1.27%</td><td class="center">4</td><td class="center">245</td></tr>
-          <tr><td>W15 ★ · 6–12 Abr</td><td class="center er-warn">0.13%</td><td class="center er-warn">0.44%</td><td class="center er-warn">0.87%</td><td class="center er-none">—</td><td class="center">3</td><td class="center">163</td></tr>
+          <tr><td>W15 ★ · 6–12 Abr</td><td class="center er-warn">0.16%</td><td class="center er-none">—</td><td class="center er-none">—</td><td class="center er-none">—</td><td class="center">1</td><td class="center">23</td></tr>
         </tbody>
       </table>
     </div>
@@ -847,7 +847,7 @@ main { padding: 32px 80px 64px; }
       <p>Empresa · Página oficial de LinkedIn</p>
     </div>
     <div class="profile-kpis">
-      <div class="profile-kpi"><div class="pk-val">15.0k</div><div class="pk-label">Followers</div></div>
+      <div class="profile-kpi"><div class="pk-val">15.4k</div><div class="pk-label">Followers</div></div>
       <div class="profile-kpi"><div class="pk-val" style="color:var(--warn)">0.30%</div><div class="pk-label">ER promedio</div></div>
       <div class="profile-kpi"><div class="pk-val">5</div><div class="pk-label">Posts 4 sem</div></div>
     </div>
@@ -1562,9 +1562,9 @@ new Chart(document.getElementById('chart-er'), {
   data: {
     labels: WEEKS,
     datasets: [
-      { label:'tapi',    data:[0.63,0.15,0.29,0.13], borderColor:COLORS.tapi,    pointBackgroundColor:COLORS.tapi,    pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
-      { label:'Tomás',   data:[null,2.60,null,0.44], borderColor:COLORS.tomas,   pointBackgroundColor:COLORS.tomas,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
-      { label:'Kevin',   data:[0.68,null,1.09,0.87], borderColor:COLORS.kevin,   pointBackgroundColor:COLORS.kevin,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'tapi',    data:[0.63,0.15,0.29,0.16], borderColor:COLORS.tapi,    pointBackgroundColor:COLORS.tapi,    pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'Tomás',   data:[null,2.60,null,null], borderColor:COLORS.tomas,   pointBackgroundColor:COLORS.tomas,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'Kevin',   data:[0.68,null,1.09,null], borderColor:COLORS.kevin,   pointBackgroundColor:COLORS.kevin,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
       { label:'Nicolás', data:[null,1.85,1.27,null], borderColor:COLORS.nicolas, pointBackgroundColor:COLORS.nicolas, pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
       { label:'BM empresa (0.5%)', data:[0.5,0.5,0.5,0.5], borderColor:'#09D334', borderDash:[5,5], borderWidth:1.5, pointRadius:0, fill:false },
       { label:'BM personal (1.5%)',data:[1.5,1.5,1.5,1.5], borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0, fill:false },
@@ -1579,8 +1579,8 @@ new Chart(document.getElementById('chart-posts'), {
     labels: ['W12','W13','W14','W15 ★'],
     datasets: [
       { label:'tapi',    data:[1,1,2,1], backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
-      { label:'Tomás',   data:[0,2,0,1], backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
-      { label:'Kevin',   data:[2,0,1,1], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
+      { label:'Tomás',   data:[0,2,0,0], backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
+      { label:'Kevin',   data:[2,0,1,0], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
       { label:'Nicolás', data:[0,1,1,0], backgroundColor:COLORS.nicolas+'CC', borderRadius:4 },
     ]
   },
@@ -1592,9 +1592,9 @@ new Chart(document.getElementById('chart-inter'), {
   data: {
     labels: ['W12','W13','W14','W15 ★'],
     datasets: [
-      { label:'tapi',    data:[95, 23, 87, 20],  backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
-      { label:'Tomás',   data:[0, 669, 0, 57],  backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
-      { label:'Kevin',   data:[136, 0, 108, 86], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
+      { label:'tapi',    data:[95, 23, 87, 23],  backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
+      { label:'Tomás',   data:[0, 669, 0, 0],  backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
+      { label:'Kevin',   data:[136, 0, 108, 0], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
       { label:'Nicolás', data:[0, 73, 50, 0],   backgroundColor:COLORS.nicolas+'CC', borderRadius:4 },
     ]
   },
@@ -1609,7 +1609,7 @@ function initTomasChart() {
     data: {
       labels: ['W12','W13','W14','W15 ★'],
       datasets: [
-        { label:'ER', data:[null,2.60,null,0.44], backgroundColor:['#ddd',COLORS.tomas+'CC','#ddd',COLORS.tomas+'CC'], borderRadius:6 },
+        { label:'ER', data:[null,2.60,null,null], backgroundColor:['#ddd',COLORS.tomas+'CC','#ddd',COLORS.tomas+'CC'], borderRadius:6 },
         { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
@@ -1624,7 +1624,7 @@ function initKevinChart() {
     data: {
       labels: ['W12','W13','W14','W15 ★'],
       datasets: [
-        { label:'ER', data:[0.68,null,1.09,0.87], backgroundColor:[COLORS.kevin+'CC','#ddd',COLORS.kevin+'CC',COLORS.kevin+'CC'], borderRadius:6 },
+        { label:'ER', data:[0.68,null,1.09,null], backgroundColor:[COLORS.kevin+'CC','#ddd',COLORS.kevin+'CC',COLORS.kevin+'CC'], borderRadius:6 },
         { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
@@ -1654,7 +1654,7 @@ function initEmpresaChart() {
     data: {
       labels: ['W12','W13','W14','W15 ★'],
       datasets: [
-        { label:'ER', data:[0.63,0.15,0.29,0.13], backgroundColor:[COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC'], borderRadius:6 },
+        { label:'ER', data:[0.63,0.15,0.29,0.16], backgroundColor:[COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC'], borderRadius:6 },
         { label:'BM 0.5%', data:[0.5,0.5,0.5,0.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
