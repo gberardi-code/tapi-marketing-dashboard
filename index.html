@@ -1562,12 +1562,12 @@ new Chart(document.getElementById('chart-er'), {
   data: {
     labels: WEEKS,
     datasets: [
-      { label:'tapi',    data:[0.63,0.15,0.29,0.25], borderColor:COLORS.tapi,    pointBackgroundColor:COLORS.tapi,    pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
-      { label:'TomÃÂÃÂÃÂÃÂ¡s',   data:[null,2.60,null,0.46], borderColor:COLORS.tomas,   pointBackgroundColor:COLORS.tomas,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
-      { label:'Kevin',   data:[0.68,null,1.09,null], borderColor:COLORS.kevin,   pointBackgroundColor:COLORS.kevin,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
-      { label:'NicolÃÂÃÂÃÂÃÂ¡s', data:[null,1.85,1.27,null], borderColor:COLORS.nicolas, pointBackgroundColor:COLORS.nicolas, pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
-      { label:'BM empresa (0.5%)', data:[0.5,0.5,0.5,0.5], borderColor:'#09D334', borderDash:[5,5], borderWidth:1.5, pointRadius:0, fill:false },
-      { label:'BM personal (1.5%)',data:[1.5,1.5,1.5,1.5], borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0, fill:false },
+      { label:'tapi',    data:[0.63,0.15,0.29,0.25,null], borderColor:COLORS.tapi,    pointBackgroundColor:COLORS.tapi,    pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'TomÃÂÃÂÃÂÃÂ¡s',   data:[null,2.60,null,0.46,null], borderColor:COLORS.tomas,   pointBackgroundColor:COLORS.tomas,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'Kevin',   data:[0.68,null,1.09,null,null], borderColor:COLORS.kevin,   pointBackgroundColor:COLORS.kevin,   pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'NicolÃÂÃÂÃÂÃÂ¡s', data:[null,1.85,1.27,null,null], borderColor:COLORS.nicolas, pointBackgroundColor:COLORS.nicolas, pointRadius:6, borderWidth:2.5, spanGaps:false, tension:.35 },
+      { label:'BM empresa (0.5%)', data:[0.5,0.5,0.5,0.5,null], borderColor:'#09D334', borderDash:[5,5], borderWidth:1.5, pointRadius:0, fill:false },
+      { label:'BM personal (1.5%)',data:[1.5,1.5,1.5,1.5,null], borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0, fill:false },
     ]
   },
   options: { ...cOpts({ callback: v => v+'%' }), scales: { ...cOpts().scales, y:{ min:0, max:3.5, ticks:{ callback:v=>v+'%', color:'#666', font:{family:'Objectivity',size:11} }, grid:{color:'#F2F2F2'} } } }
@@ -1576,12 +1576,12 @@ new Chart(document.getElementById('chart-er'), {
 new Chart(document.getElementById('chart-posts'), {
   type: 'bar',
   data: {
-    labels: ['W12','W13','W14','W15 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ'],
+    labels:['W12','W13','W14','W15','W16'],
     datasets: [
-      { label:'tapi',    data:[1,1,2,1], backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
-      { label:'TomÃÂÃÂÃÂÃÂ¡s',   data:[0,2,0,1], backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
-      { label:'Kevin',   data:[2,0,1,0], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
-      { label:'NicolÃÂÃÂÃÂÃÂ¡s', data:[0,1,1,0], backgroundColor:COLORS.nicolas+'CC', borderRadius:4 },
+      { label:'tapi',    data:[1,1,2,1,null], backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
+      { label:'TomÃÂÃÂÃÂÃÂ¡s',   data:[0,2,0,1,null], backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
+      { label:'Kevin',   data:[2,0,1,0,null], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
+      { label:'NicolÃÂÃÂÃÂÃÂ¡s', data:[0,1,1,0,null], backgroundColor:COLORS.nicolas+'CC', borderRadius:4 },
     ]
   },
   options: { ...cOpts({ stepSize:1 }) }
@@ -1590,12 +1590,12 @@ new Chart(document.getElementById('chart-posts'), {
 new Chart(document.getElementById('chart-inter'), {
   type: 'bar',
   data: {
-    labels: ['W12','W13','W14','W15 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ'],
+    labels:['W12','W13','W14','W15','W16'],
     datasets: [
-      { label:'tapi',    data:[95, 23, 87, 38],  backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
-      { label:'TomÃÂÃÂÃÂÃÂ¡s',   data:[0, 669, 0, 59],  backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
-      { label:'Kevin',   data:[136, 0, 108, 0], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
-      { label:'NicolÃÂÃÂÃÂÃÂ¡s', data:[0, 73, 50, 0],   backgroundColor:COLORS.nicolas+'CC', borderRadius:4 },
+      { label:'tapi',    data:[95, 23, 87, 38,null],  backgroundColor:COLORS.tapi+'CC',    borderRadius:4 },
+      { label:'TomÃÂÃÂÃÂÃÂ¡s',   data:[0, 669, 0, 59,null],  backgroundColor:COLORS.tomas+'CC',   borderRadius:4 },
+      { label:'Kevin',   data:[136, 0, 108, 0,null], backgroundColor:COLORS.kevin+'CC',   borderRadius:4 },
+      { label:'NicolÃÂÃÂÃÂÃÂ¡s', data:[0, 73, 50, 0,null],   backgroundColor:COLORS.nicolas+'CC', borderRadius:4 },
     ]
   },
   options: cOpts()
@@ -1607,10 +1607,10 @@ function initTomasChart() {
   new Chart(document.getElementById('chart-tomas-er'), {
     type: 'bar',
     data: {
-      labels: ['W12','W13','W14','W15 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ'],
+      labels:['W12','W13','W14','W15','W16'],
       datasets: [
-        { label:'ER', data:[null,2.60,null,0.46], backgroundColor:['#ddd',COLORS.tomas+'CC','#ddd',COLORS.tomas+'CC'], borderRadius:6 },
-        { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
+        { label:'ER', data:[null,2.60,null,0.46,null], backgroundColor:['#ddd',COLORS.tomas+'CC','#ddd',COLORS.tomas+'CC'], borderRadius:6 },
+        { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5,null], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
     options: { ...cOpts({ callback:v=>v+'%' }), plugins:{...cOpts().plugins, legend:{display:false}}, scales:{...cOpts().scales, y:{min:0,max:3,ticks:{callback:v=>v+'%',color:'#666',font:{family:'Objectivity',size:11}},grid:{color:'#F2F2F2'}}} }
@@ -1622,10 +1622,10 @@ function initKevinChart() {
   new Chart(document.getElementById('chart-kevin-er'), {
     type: 'bar',
     data: {
-      labels: ['W12','W13','W14','W15 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ'],
+      labels:['W12','W13','W14','W15','W16'],
       datasets: [
-        { label:'ER', data:[0.68,null,1.09,null], backgroundColor:[COLORS.kevin+'CC','#ddd',COLORS.kevin+'CC',COLORS.kevin+'CC'], borderRadius:6 },
-        { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
+        { label:'ER', data:[0.68,null,1.09,null,null], backgroundColor:[COLORS.kevin+'CC','#ddd',COLORS.kevin+'CC',COLORS.kevin+'CC'], borderRadius:6 },
+        { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5,null], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
     options: { ...cOpts({ callback:v=>v+'%' }), plugins:{...cOpts().plugins, legend:{display:false}}, scales:{...cOpts().scales, y:{min:0,max:2,ticks:{callback:v=>v+'%',color:'#666',font:{family:'Objectivity',size:11}},grid:{color:'#F2F2F2'}}} }
@@ -1637,10 +1637,10 @@ function initNicolasChart() {
   new Chart(document.getElementById('chart-nicolas-er'), {
     type: 'bar',
     data: {
-      labels: ['W12','W13','W14','W15 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ'],
+      labels:['W12','W13','W14','W15','W16'],
       datasets: [
-        { label:'ER', data:[null,1.85,1.27,null], backgroundColor:['#ddd',COLORS.nicolas+'CC',COLORS.nicolas+'CC','#ddd'], borderRadius:6 },
-        { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
+        { label:'ER', data:[null,1.85,1.27,null,null], backgroundColor:['#ddd',COLORS.nicolas+'CC',COLORS.nicolas+'CC','#ddd'], borderRadius:6 },
+        { label:'BM 1.5%', data:[1.5,1.5,1.5,1.5,null], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
     options: { ...cOpts({ callback:v=>v+'%' }), plugins:{...cOpts().plugins, legend:{display:false}}, scales:{...cOpts().scales, y:{min:0,max:3,ticks:{callback:v=>v+'%',color:'#666',font:{family:'Objectivity',size:11}},grid:{color:'#F2F2F2'}}} }
@@ -1652,10 +1652,10 @@ function initEmpresaChart() {
   new Chart(document.getElementById('chart-empresa-er'), {
     type: 'bar',
     data: {
-      labels: ['W12','W13','W14','W15 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ'],
+      labels:['W12','W13','W14','W15','W16'],
       datasets: [
-        { label:'ER', data:[0.63,0.15,0.29,0.25], backgroundColor:[COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC'], borderRadius:6 },
-        { label:'BM 0.5%', data:[0.5,0.5,0.5,0.5], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
+        { label:'ER', data:[0.63,0.15,0.29,0.25,null], backgroundColor:[COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC',COLORS.tapi+'CC'], borderRadius:6 },
+        { label:'BM 0.5%', data:[0.5,0.5,0.5,0.5,null], type:'line', borderColor:'#F97316', borderDash:[5,5], borderWidth:1.5, pointRadius:0 },
       ]
     },
     options: { ...cOpts({ callback:v=>v+'%' }), plugins:{...cOpts().plugins, legend:{display:false}}, scales:{...cOpts().scales, y:{min:0,max:1,ticks:{callback:v=>v+'%',color:'#666',font:{family:'Objectivity',size:11}},grid:{color:'#F2F2F2'}}} }
