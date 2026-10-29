@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tapi 50 México 2027</title>
+<meta name="description" content="Ranking anual de las 50 empresas que están transformando cómo pagan los mexicanos sus servicios. Muestra con datos de ejemplo.">
+<style>
+@font-face{font-family:'Objectivity';src:local('Objectivity'),local('Objectivity-Regular');font-weight:400;font-display:swap}
+@font-face{font-family:'Objectivity';src:local('Objectivity Medium'),local('Objectivity-Medium');font-weight:500;font-display:swap}
+@font-face{font-family:'Objectivity';src:local('Objectivity Bold'),local('Objectivity-Bold');font-weight:700;font-display:swap}
+:root{
+  /* tokens tapi (espejo de report/_base.css) */
+  --verde-tapi:#09D334;--verde-oscuro:#01431D;--verde-claro:#00EE9F;
+  --verde-50:#E8FAF0;--verde-100:#C2F2D5;--verde-200:#8DE8B0;--verde-700:#047D1C;--verde-900:#012A12;
+  --gris-50:#F9F9F9;--gris-100:#F2F2F2;--gris-200:#E5E5E5;--gris-300:#D0D0D0;--gris-600:#666666;--gris-800:#222222;
+  /* semánticos */
+  --bg:#FFFFFF;--bg-alt:var(--gris-50);--surface:#FFFFFF;--text:#000000;--text-2:var(--gris-600);
+  --border:var(--gris-200);--accent:var(--verde-tapi);--accent-text:var(--verde-700);--on-accent:var(--verde-oscuro);
+  --chip-bg:var(--verde-50);--chip-text:var(--verde-oscuro);--band-bg:var(--verde-oscuro);--band-text:#fff;
+  --font:'Objectivity',-apple-system,'Segoe UI',Arial,sans-serif;
+  --s1:8px;--s2:16px;--s3:24px;--s4:32px;--s5:48px;--s6:64px;--s7:96px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0A120D;--bg-alt:#0F1A13;--surface:#13201A;--text:#FFFFFF;--text-2:#B4BEB8;--border:#243228;
+  --accent-text:var(--verde-tapi);--chip-bg:#16291D;--chip-text:#E8FAF0;--band-bg:var(--verde-900);}}
+:root[data-theme="dark"]{--bg:#0A120D;--bg-alt:#0F1A13;--surface:#13201A;--text:#FFFFFF;--text-2:#B4BEB8;--border:#243228;--accent-text:var(--verde-tapi);--chip-bg:#16291D;--chip-text:#E8FAF0;--band-bg:var(--verde-900)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--s2)}
+@media(min-width:720px){.wrap{padding:0 var(--s4)}}
+.band{background:var(--band-bg);color:var(--band-text);text-align:center;font-size:13px;font-weight:500;padding:10px var(--s2);letter-spacing:.02em}
+.band b{color:var(--verde-claro)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+nav img{height:26px;display:block}
+.logo-dark{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo-light{display:none}:root:not([data-theme="light"]) .logo-dark{display:block}}
+:root[data-theme="dark"] .logo-light{display:none}:root[data-theme="dark"] .logo-dark{display:block}
+.theme{background:none;border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 14px;font:500 13px var(--font);cursor:pointer}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text)}
+h1,h2,h3{margin:0;line-height:1.05;letter-spacing:-.02em}
+h1{font-size:clamp(36px,7vw,76px);font-weight:700;max-width:16ch}
+h1 em{font-style:normal;color:var(--accent-text)}
+h2{font-size:clamp(28px,4.4vw,44px);font-weight:700}
+.sub{font-size:clamp(18px,2.2vw,22px);color:var(--text-2);max-width:48ch;margin:var(--s3) 0 var(--s4)}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font:700 16px var(--font);padding:16px 28px;border-radius:12px;border:0;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(9,211,52,.3)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--verde-claro);outline-offset:2px}
+.hero{padding:var(--s5) 0 var(--s6);position:relative}
+.hero .ed{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 16px;font-weight:700;font-size:14px;margin-bottom:var(--s3)}
+.hero .ed i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px}
+.hero .big{position:absolute;right:0;top:20px;font-size:clamp(120px,24vw,320px);font-weight:700;letter-spacing:-.06em;color:var(--verde-50);z-index:-1;line-height:1;pointer-events:none;user-select:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero .big{color:#13201A}}
+:root[data-theme="dark"] .hero .big{color:#13201A}
+section{padding:var(--s6) 0}
+@media(min-width:720px){section{padding:var(--s7) 0}}
+.alt{background:var(--bg-alt)}
+.intro{display:grid;gap:var(--s3);grid-template-columns:1fr}
+.intro p{font-size:clamp(20px,2.6vw,28px);line-height:1.4;margin:0;max-width:34ch;font-weight:500}
+.intro p span{color:var(--text-2)}
+@media(min-width:900px){.intro{grid-template-columns:1fr 2fr}.intro p{max-width:none}}
+.method{margin-top:var(--s4);background:var(--surface);border:1px solid var(--border);border-left:6px solid var(--accent);border-radius:16px;padding:var(--s3)}
+@media(min-width:720px){.method{padding:var(--s5)}}
+.crit{display:grid;gap:var(--s3);grid-template-columns:1fr;margin:var(--s3) 0 0;padding:0;list-style:none;counter-reset:c}
+@media(min-width:720px){.crit{grid-template-columns:1fr 1fr}}
+.crit li{counter-increment:c;display:flex;gap:var(--s2)}
+.crit li:before{content:counter(c);flex:none;width:32px;height:32px;border-radius:50%;background:var(--chip-bg);color:var(--chip-text);display:grid;place-items:center;font-weight:700;font-size:14px}
+.crit b{display:block}.crit span{color:var(--text-2);font-size:15px}
+.note{margin-top:var(--s3);padding:var(--s2);background:var(--bg-alt);border-radius:12px;font-size:14px;color:var(--text-2)}
+.head{margin-bottom:var(--s5);max-width:60ch}
+.head p{color:var(--text-2);font-size:18px;margin:var(--s2) 0 0}
+/* mapa */
+.map{display:grid;gap:var(--s2);grid-template-columns:1fr}
+@media(min-width:720px){.map{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.map{grid-template-columns:repeat(3,1fr)}}
+.cat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:var(--s3);display:flex;flex-direction:column;gap:var(--s2)}
+.cat h3{font-size:19px;line-height:1.2;letter-spacing:-.01em}
+.cat small{color:var(--text-2);font-size:13px;display:block;margin-top:4px;font-weight:400}
+.cat .n{font-size:13px;font-weight:700;color:var(--accent-text)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.chip{background:var(--chip-bg);color:var(--chip-text);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:500;border:0;cursor:pointer;font-family:var(--font)}
+.chip:hover{background:var(--accent);color:var(--on-accent)}
+.cat.last{background:var(--band-bg);color:var(--band-text);border-color:transparent;justify-content:center}
+.cat.last p{margin:0;font-size:20px;font-weight:500}.cat.last b{font-size:56px;color:var(--verde-claro);display:block;line-height:1}
+/* tendencias */
+.trend{display:grid;gap:var(--s3);padding:var(--s5) 0;border-top:1px solid var(--border);grid-template-columns:1fr}
+@media(min-width:900px){.trend{grid-template-columns:1fr 1.3fr;gap:var(--s6)}}
+.num{font-size:clamp(72px,14vw,140px);font-weight:700;letter-spacing:-.05em;line-height:.9;color:var(--accent-text)}
+.num small{display:block;font-size:16px;letter-spacing:0;color:var(--text-2);font-weight:500;margin-top:var(--s1);line-height:1.4}
+.trend h3{font-size:clamp(22px,3vw,30px);margin-bottom:var(--s2)}
+.trend p{color:var(--text-2);margin:0 0 var(--s3);font-size:17px}
+blockquote{margin:0;padding-left:var(--s3);border-left:4px solid var(--accent);font-size:18px;font-weight:500}
+blockquote cite{display:block;margin-top:8px;font-size:14px;font-style:normal;color:var(--text-2);font-weight:400}
+.bars{display:flex;gap:6px;align-items:flex-end;height:64px;margin-top:var(--s2)}
+.bars span{flex:1;background:var(--verde-200);border-radius:4px 4px 0 0}
+.bars span:last-child{background:var(--accent)}
+/* kpis */
+.kpis{display:grid;gap:var(--s2);grid-template-columns:1fr 1fr}
+@media(min-width:900px){.kpis{grid-template-columns:repeat(5,1fr)}}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:var(--s3) var(--s2)}
+.kpi:first-child{grid-column:1/-1;background:var(--band-bg);color:var(--band-text);border-color:transparent}
+@media(min-width:900px){.kpi:first-child{grid-column:auto}}
+.kpi b{display:block;font-size:clamp(34px,5vw,52px);letter-spacing:-.04em;line-height:1;color:var(--accent-text)}
+.kpi:first-child b{color:var(--verde-claro)}
+.kpi span{display:block;margin-top:var(--s1);font-size:14px;color:var(--text-2)}
+.kpi:first-child span{color:#D7E9DE}
+.meter{height:6px;border-radius:3px;background:var(--border);margin-top:var(--s2);overflow:hidden}.meter i{display:block;height:100%;background:var(--accent)}
+/* tabla */
+.tools{display:flex;gap:var(--s2);flex-wrap:wrap;margin-bottom:var(--s3);align-items:center}
+select,input[type=text],input[type=email]{font:400 16px var(--font);padding:14px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);min-width:0}
+select{flex:1 1 240px;max-width:420px}
+.count{color:var(--text-2);font-size:14px}
+.tw{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2);padding:14px var(--s2);background:var(--bg-alt);border-bottom:1px solid var(--border)}
+td{padding:14px var(--s2);border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.pos{font-weight:700;font-size:20px;color:var(--accent-text);width:64px;letter-spacing:-.02em}
+td.nm{font-weight:700}
+.tag{display:inline-block;background:var(--chip-bg);color:var(--chip-text);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:500;white-space:nowrap}
+@media(max-width:700px){
+ thead{display:none}
+ tr{display:grid;grid-template-columns:48px 1fr;gap:2px 8px;padding:14px var(--s2);border-bottom:1px solid var(--border)}
+ td{display:block;padding:0;border:0}
+ td.pos{grid-row:1/4;width:auto}
+}
+/* cta */
+.cta{display:grid;gap:var(--s5);grid-template-columns:1fr}
+@media(min-width:900px){.cta{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:var(--s4)}
+.card.dark{background:var(--band-bg);color:var(--band-text);border-color:transparent}
+form{display:grid;gap:var(--s2);margin-top:var(--s3)}
+label{font-size:14px;font-weight:500;display:grid;gap:6px}
+.ok{display:none;margin-top:var(--s2);padding:var(--s2);border-radius:12px;background:var(--verde-50);color:var(--verde-oscuro);font-weight:500}
+.steps{padding:0;list-style:none;margin:var(--s3) 0 0;display:grid;gap:var(--s2)}
+.steps li{display:flex;gap:var(--s2)}.steps b{color:var(--verde-claro)}
+footer{padding:var(--s5) 0;border-top:1px solid var(--border);font-size:13px;color:var(--text-2)}
+.hl{scroll-margin-top:24px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="band" role="note"><b>Muestra con datos de ejemplo.</b> Todos los nombres, cifras y citas de este documento son ficticios.</div>
+
+<header class="wrap">
+ <nav aria-label="Principal">
+  <a href="#top" aria-label="tapi"><img class="logo-light" src="https://tapi.la/wp-content/uploads/2025/06/logo_black.svg" alt="tapi"><img class="logo-dark" src="https://tapi.la/wp-content/uploads/2024/07/Logo-nuevo.svg" alt="tapi"></a>
+  <button class="theme" id="theme" type="button" aria-label="Cambiar tema">Tema</button>
+ </nav>
+</header>
+
+<main id="top">
+<section class="hero wrap" style="padding-top:var(--s5)">
+ <div class="big" aria-hidden="true">50</div>
+ <span class="ed"><i></i>Edición 2027</span>
+ <h1>tapi 50 México: las empresas que están <em>transformando</em> cómo pagan los mexicanos sus servicios</h1>
+ <p class="sub">El ranking anual de las 50 empresas que hacen más simple, rápido y digital el pago de servicios en México.</p>
+ <a class="btn" href="#descargar">Descargar el reporte completo</a>
+</section>
+
+<section class="alt"><div class="wrap intro">
+ <div class="eyebrow">Por qué ahora</div>
+ <p>Pagar la luz, el predial o el celular ya no requiere hacer fila. SPEI, CoDi y DiMo, las billeteras y las apps bancarias están moviendo el pago de servicios hacia lo digital. <span>Las empresas que cobran compiten ahora por una cosa: que pagarles sea lo más fácil del mes.</span></p>
+</div></section>
+
+<section class="wrap" id="metodologia">
+ <div class="head"><div class="eyebrow">Metodología</div><h2 style="margin-top:12px">Cómo se construye el ranking</h2></div>
+ <div class="method">
+  <ul class="crit">
+   <li><div><b>Aceptación de SPEI, CoDi y DiMo</b><span>Qué tan completa es la oferta de pagos instantáneos.</span></div></li>
+   <li><div><b>Cantidad de canales de pago</b><span>Bancos, billeteras y tiendas de conveniencia disponibles.</span></div></li>
+   <li><div><b>App y domiciliación</b><span>Pago desde app propia y cobro recurrente automático.</span></div></li>
+   <li><div><b>Facilidad de pago</b><span>Número de pasos y uso de referencia para pagar.</span></div></li>
+   <li><div><b>Encuesta a ejecutivos</b><span>Percepción de líderes de la industria.</span></div></li>
+   <li><div><b>Crecimiento digital agregado</b><span>Evolución de la red tapi, medida en conjunto.</span></div></li>
+  </ul>
+  <p class="note"><b>Privacidad:</b> se excluyen datos individuales de clientes. Solo se usan indicadores agregados y anonimizados.</p>
+ </div>
+</section>
+
+<section class="alt" id="mapa"><div class="wrap">
+ <div class="head"><div class="eyebrow">Mapa de mercado</div><h2 style="margin-top:12px">50 empresas, 7 categorías</h2><p>Cada categoría pesa lo mismo en el ranking. Toca una empresa para ver su lugar en la tabla.</p></div>
+ <div class="map" id="map"></div>
+</div></section>
+
+<section class="wrap" id="tendencias">
+ <div class="head"><div class="eyebrow">Tendencias</div><h2 style="margin-top:12px">Tres cambios que definen 2027</h2></div>
+ <article class="trend">
+  <div><div class="num">-18<small>puntos porcentuales en la participación del efectivo vs. 2024</small></div></div>
+  <div><h3>El efectivo retrocede en el pago de servicios</h3><p>Cada año más pagos migran a transferencias y apps. El efectivo sigue siendo relevante, pero ya no es el canal por defecto en la mayoría de la cohorte.</p>
+   <div class="bars" aria-hidden="true"><span style="height:100%"></span><span style="height:84%"></span><span style="height:68%"></span><span style="height:54%"></span></div>
+   <blockquote style="margin-top:var(--s3)">“Lo que antes era una fila en ventanilla hoy es un toque en el celular.”<cite>Dirección Comercial, Telco A (cita de ejemplo)</cite></blockquote></div>
+ </article>
+ <article class="trend">
+  <div><div class="num">3.4×<small>más pagos vía billeteras que en 2024</small></div></div>
+  <div><h3>Bancos y billeteras, la nueva caja</h3><p>La app bancaria y la billetera funcionan como la caja de cobro de las empresas. Cuantos más canales se conectan, menos fricción y menos cartera vencida.</p>
+   <blockquote style="margin-top:var(--s3)">“Ya no pensamos en sucursales: pensamos en cuántas apps nos pueden cobrar.”<cite>Dirección de Operaciones, Financiera C (cita de ejemplo)</cite></blockquote></div>
+ </article>
+ <article class="trend">
+  <div><div class="num">62%<small>de los municipios de la cohorte ya cobra predial y agua en línea</small></div></div>
+  <div><h3>Los gobiernos locales digitalizan predial y agua</h3><p>Los gobiernos estatales y municipales pasan de la ventanilla al pago con referencia, y amplían la recaudación sin abrir nuevos módulos.</p>
+   <blockquote style="margin-top:var(--s3)">“El pago con referencia nos permitió recaudar más sin ampliar el personal.”<cite>Tesorería, Municipio B (cita de ejemplo)</cite></blockquote></div>
+ </article>
+</section>
+
+<section class="alt" id="numeros"><div class="wrap">
+ <div class="head"><div class="eyebrow">Los números de la cohorte</div><h2 style="margin-top:12px">La cohorte 2027 en cifras</h2></div>
+ <div class="kpis">
+  <div class="kpi"><b>412 M</b><span>transacciones digitales en el año</span></div>
+  <div class="kpi"><b>+27%</b><span>crecimiento interanual</span></div>
+  <div class="kpi"><b>9.3</b><span>canales de pago promedio por empresa</span></div>
+  <div class="kpi"><b>78%</b><span>acepta CoDi o DiMo</span><div class="meter"><i style="width:78%"></i></div></div>
+  <div class="kpi"><b>64%</b><span>ofrece domiciliación y app propia</span><div class="meter"><i style="width:64%"></i></div></div>
+ </div>
+</div></section>
+
+<section class="wrap" id="ranking">
+ <div class="head"><div class="eyebrow">Ranking completo</div><h2 style="margin-top:12px">Las 50, una por una</h2></div>
+ <div class="tools">
+  <label for="f" style="flex:1 1 240px;max-width:420px"><span class="count">Filtrar por categoría</span>
+   <select id="f"></select></label>
+  <span class="count" id="cnt" aria-live="polite"></span>
+ </div>
+ <div class="tw"><table><thead><tr><th>#</th><th>Empresa</th><th>Categoría</th><th>Dato destacado</th></tr></thead><tbody id="tb"></tbody></table></div>
+</section>
+
+<section class="alt" id="descargar"><div class="wrap cta">
+ <div class="card">
+  <div class="eyebrow">Descarga</div>
+  <h2 style="font-size:clamp(26px,3.6vw,36px);margin-top:12px">Recibe el reporte completo en PDF</h2>
+  <form id="form" novalidate>
+   <label>Nombre<input type="text" name="nombre" required autocomplete="name"></label>
+   <label>Correo electrónico<input type="email" name="email" required autocomplete="email"></label>
+   <button class="btn" type="submit">Descargar el PDF</button>
+   <div class="ok" id="ok" role="status">Listo. Te enviaremos el reporte a tu correo.</div>
+  </form>
+ </div>
+ <div class="card dark">
+  <div class="eyebrow" style="color:var(--verde-claro)">Edición 2028</div>
+  <h2 style="font-size:clamp(26px,3.6vw,36px);margin-top:12px">Cómo postular para la edición 2028</h2>
+  <ol class="steps">
+   <li><b>01</b><span>Registra a tu empresa en el formulario de postulación.</span></li>
+   <li><b>02</b><span>Comparte indicadores agregados de canales y facilidad de pago.</span></li>
+   <li><b>03</b><span>Responde la encuesta a ejecutivos y espera los resultados.</span></li>
+  </ol>
+  <p style="margin:var(--s3) 0 0"><a class="btn" href="#postular" onclick="return false">Quiero postular</a></p>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">tapi 50 México · Edición 2027 · Muestra con datos de ejemplo: nombres, cifras y citas ficticios.</div></footer>
+
+<script>
+var CATS=[
+ ["Gobiernos estatales y municipales","Predial, agua, licencias, multas",["Municipio","Estado"],8],
+ ["Telcos","Móvil, fijo, TV de paga",["Telco"],7],
+ ["ISPs","Internet residencial y empresarial",["ISP"],7],
+ ["Financieras","SOFOMES, crédito departamental, BNPL, cajas populares",["Financiera","Crédito departamental","BNPL","Caja popular"],7],
+ ["Gaseras y agua","Gas LP, gas natural, organismos de agua",["Gasera","Organismo de agua"],7],
+ ["Aseguradoras","Autos, vida, gastos médicos",["Aseguradora"],7],
+ ["Fintechs y canales de pago","Billeteras, apps y redes de comercios",["Billetera","Fintech","Red de comercios"],7]];
+var FACTS=["Acepta SPEI, CoDi y DiMo","12 canales de pago activos","Pago en 2 pasos con referencia","Domiciliación en 9 de cada 10 cuentas","+41% en pagos digitales","App con pago en un toque","Cobertura en 20 estados","Mayor mejora en facilidad de pago","+33% de uso de billeteras","Cero filas: 100% pago remoto"];
+var L="ABCDEFGHIJKLMNOPQRSTUVWXYZ",rows=[],map=document.getElementById("map"),k=0;
+CATS.forEach(function(c,ci){
+ var names=[];
+ for(var i=0;i<c[3];i++){var t=c[2][i%c[2].length];names.push(t+" "+L[(Math.floor(k/1)+0)%26]+(k>=26?"2":""));rows.push({n:t+" "+L[k%26]+(k>=26?"2":""),c:ci,id:k});k++;}
+ var d=document.createElement("div");d.className="cat";
+ d.innerHTML='<div><span class="n">'+String(ci+1).padStart(2,"0")+' · '+c[3]+' empresas</span><h3>'+c[0]+'</h3><small>'+c[1]+'</small></div><div class="chips"></div>';
+ var ch=d.querySelector(".chips");
+ names.forEach(function(nm,i){var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=nm;b.dataset.id=rows[k-c[3]+i].id;ch.appendChild(b)});
+ map.appendChild(d);
+});
+var last=document.createElement("div");last.className="cat last";last.innerHTML="<p><b>50</b>empresas, 7 categorías, el mismo peso en el ranking.</p>";map.appendChild(last);
+/* ranking: orden determinista mezclado entre categorías */
+var order=rows.slice().sort(function(a,b){return ((a.id*37+11)%53)-((b.id*37+11)%53)});
+order.forEach(function(r,i){r.pos=i+1;r.f=FACTS[(r.id*3+i)%FACTS.length]});
+order.sort(function(a,b){return a.pos-b.pos});
+var tb=document.getElementById("tb"),f=document.getElementById("f"),cnt=document.getElementById("cnt");
+f.innerHTML='<option value="-1">Todas las categorías (50)</option>'+CATS.map(function(c,i){return '<option value="'+i+'">'+c[0]+' ('+c[3]+')</option>'}).join("");
+function draw(){var v=+f.value,n=0;tb.innerHTML=order.filter(function(r){return v<0||r.c===v}).map(function(r){n++;return '<tr id="r'+r.id+'"><td class="pos">'+String(r.pos).padStart(2,"0")+'</td><td class="nm">'+r.n+'</td><td><span class="tag">'+CATS[r.c][0]+'</span></td><td>'+r.f+'</td></tr>'}).join("");cnt.textContent=n+" empresas";}
+f.addEventListener("change",draw);draw();
+map.addEventListener("click",function(e){var b=e.target.closest(".chip");if(!b)return;f.value="-1";draw();var r=document.getElementById("r"+b.dataset.id);r.scrollIntoView({behavior:"smooth",block:"center"});r.style.background="var(--chip-bg)";setTimeout(function(){r.style.background=""},2000)});
+document.getElementById("form").addEventListener("submit",function(e){e.preventDefault();var fm=e.target;if(!fm.nombre.value.trim()||!/\S+@\S+\.\S+/.test(fm.email.value)){fm.reportValidity&&0;document.getElementById("ok").style.display="block";document.getElementById("ok").textContent="Ingresa tu nombre y un correo válido.";return}document.getElementById("ok").style.display="block";document.getElementById("ok").textContent="Listo. Te enviaremos el reporte a tu correo. (Demo: sin envío real)";});
+var tg=document.getElementById("theme"),root=document.documentElement;
+tg.addEventListener("click",function(){var dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;root.dataset.theme=dark?"light":"dark"});
+</script>
+</body>
+</html>
